@@ -23,9 +23,12 @@ def process_packet(packet):
                  print("Could not decode payload:", e )
 
 def main():
-  # Start sniffing; does not store packets
+
+  # Start sniffing not store packets :)
     sniff( prn = process_packet , store=False )
 
-if _name== "main_":
+    
+if __name__ == "__main__":
    
    main( )
+   
